@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday</title>
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-      crossorigin="anonymous"
-    ></script> -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <main class="page js-page">
       <div class="hero-section js-hero-section">
-        <div class="hero-section__text">
-          З Днем народження, моя кохана кісанька! 🥳 Зібрав для тебе декілька
-          вже архівних фотографій і пропоную разом згадати, як це було, і якою
-          гарною ти залишаєшся ці роки 😍 Якщо готова, то тицяй у кнопку на
-          своїй мові та поїхали. Один тиць - далі, два тиця - назад.
+        <canvas
+          style="margin-top: -400px"
+          id="canvas"
+          width="300"
+          height="130"
+        ></canvas>
+        <div class="hero-section__content">
+          <div class="hero-section__text">
+            З Днем народження, моя кохана кісанька! 🥳
+            <br />
+            Зібрав для тебе декілька вже архівних фотографій і пропоную разом
+            згадати, як це було, і якою гарною ти залишаєшся ці роки 😍 Якщо
+            готова, то тицяй у кнопку на своїй мові та поїхали. Один тиць -
+            далі, два тиця - назад
+          </div>
+          <button class="hero-section__start-btn js-start-btn" type="button">
+            Ко! 🐔
+          </button>
         </div>
-        <button class="js-start-btn" type="button">Ко! 🐔</button>
       </div>
 
       <div class="skw-pages">

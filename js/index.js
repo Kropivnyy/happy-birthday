@@ -1,5 +1,6 @@
 import { startSlider } from "./slider.js";
 import { debounce } from "./debounce.js";
+import "./neon-heart.js";
 
 let REFS = {
   root: document.documentElement,
