@@ -162,9 +162,6 @@ body {
   color: #fff;
   transform: skewX(var(--skew));
   transition: transform 1s, opacity 1s;
-  /* background-size: 200%;
-        background-repeat: no-repeat;
-        background-position: 60% center; */
   background-size: cover;
   background-position: 50% center;
 }
@@ -180,6 +177,17 @@ body {
   opacity: 0.5;
   transform: skewX(var(--skew)) scale(0.95);
 }
+.skw-page__content.last-slide {
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+
 .skw-page-1 .skw-page__content {
   background-image: url("../img/p1.webp");
 }
