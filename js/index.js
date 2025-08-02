@@ -1,9 +1,11 @@
-import "./slider.js";
+import { startSlider } from "./slider.js";
 import { debounce } from "./debounce.js";
 
 let REFS = {
   root: document.documentElement,
   page: document.querySelector(".js-page"),
+  heroSection: document.querySelector(".js-hero-section"),
+  startButton: document.querySelector(".js-start-btn"),
 };
 
 const showContent = () => {
@@ -31,9 +33,20 @@ const onResize = () => {
 const onResizeDebounced = debounce(onResize, 300);
 
 const init = () => {
-  //   REFS = {
-  //     page: document.querySelector(".js-page"),
-  //   };
+  REFS.heroSection.addEventListener("click", (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+  });
+
+  REFS.startButton.addEventListener("click", (e) => {
+    REFS.heroSection.classList.add("hidden");
+    setTimeout(() => {
+      REFS.heroSection.classList.add("removed");
+    }, 1000);
+
+    startSlider();
+  });
+
   onResize();
   window.addEventListener("resize", onResizeDebounced);
 

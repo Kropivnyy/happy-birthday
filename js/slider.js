@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+export const startSlider = () => {
   let curPage = 1;
   const pages = document.querySelectorAll(".skw-page");
   const numOfPages = pages.length;
@@ -107,4 +107,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }, maxTapDelay);
     }
   });
-});
+};
