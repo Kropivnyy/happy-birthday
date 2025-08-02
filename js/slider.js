@@ -15,7 +15,7 @@ export const startSlider = () => {
         page.classList.add("active");
       } else if (pageNum === curPage - 1) {
         page.classList.add("inactive");
-      } else {
+      } else if (pageNum > curPage) {
         page.classList.remove("active");
       }
     });
