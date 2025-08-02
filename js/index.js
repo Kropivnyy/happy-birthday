@@ -17,7 +17,7 @@ const showContent = () => {
 
 const setSkewPercent = () => {
   const ratio = window.innerHeight / window.innerWidth;
-  const percent = -30.97 * ratio - 3.3;
+  const percent = -30.97 * ratio - 2.6;
   REFS.root.style.setProperty("--skewed-shift", `${percent}%`);
 };
 
